@@ -168,7 +168,7 @@ def compile_full_transcript(segments, output_filename, text_dir):
     for segment in segments:
         f_compiled.write("{} [{},{}]: {}\n".format(segment["speaker"],segment["start"], segment["end"], segment["text"]))
     f_compiled.close()
-    print("Compile: Finished compiling transcript at {}!\n".format(text_output))
+    print("Compile: Finished compiling transcript at {}!\n".format(output_filepath))
 
 """
     Handling a multitrack transcription
